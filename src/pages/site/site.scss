@@ -1,0 +1,46 @@
+page-site {
+    
+    .buttontwiter::before{
+        width: 60px;
+        height: 60px;
+        font-size: 52px !important;
+    }
+
+    .ion-logo-facebook{
+        content: "\f236";
+        width: 60px;
+        height: 60px;
+        font-size: 52px !important;
+    }
+    .ion-logo-linkedin:before {
+        content: "\f240";
+        font-size: 52px !important
+        
+    }
+
+    .col{
+        padding: 25px;
+        
+    }
+
+    .sizeAjust{
+        /* Or zero, or something very small */
+       margin: auto;
+       width: 130px;
+       
+       
+   }
+
+    .toolbar-title.toolbar-title{
+        color:white;
+    }
+
+    .ButtonIcon{
+        font-size: 52px !important
+
+    }
+    .divforbuttons{
+        padding: 35px;
+        
+    }
+}

@@ -14,3 +14,47 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+.toolbar-background {
+    background-color: purple;
+  }
+  ion-menu{
+    color: white;
+    ion-content{
+     background-color:purple !important;
+    }
+   }
+
+   .elementsMenu{
+    
+    background-color: purple;
+    color: white;
+   }
+
+  .bar-button::after {
+    left: -2px;
+    right: -2px;
+    top: -7px;
+    bottom: -6px;
+    position: absolute;
+    content: "";
+    color: #FFFAFA;
+}
+
+.bar-button{
+    color: #FFFAFA;
+}
+
+.toolbar-title-md {
+    padding: 0 12px;
+    font-size: 2rem;
+    font-weight: 500;
+    color: #FFFAFA;
+}
+
+.toolbar-title-ios {
+    padding: 0 12px;
+    font-size: 2rem;
+    font-weight: 500;
+    color: #FFFAFA;
+}

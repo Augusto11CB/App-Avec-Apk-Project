@@ -3,16 +3,56 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Home</ion-title>
+    <div class="sizeAjust">
+      <ion-title class="titleClass">AVEC</ion-title>
+    </div>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <h3>Ionic Menu Starter</h3>
 
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
-  </p>
+<ion-content>
 
-  <button ion-button secondary menuToggle>Toggle Menu</button>
+  <div style="overflow-y:auto;">
+    <ion-slides page>
+
+      <ion-slide *ngFor="let fotos of result">
+
+        <ion-row class="row_images_home">
+          <ion-col>
+            <img [src]=fotos class="images_home">
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <p>Bem vindo ao nosso aplicativo.</p>
+            <p>Acima você pode rolar as imagens e</p>
+            <p>ver algumas das nossas fotos, no</p>
+            <p>menu você pode acessar nossos links</p>
+            <p>rápidos e abaixo você pode seguir</p>
+            <p>nossas redes sociais. Obrigado.</p>
+          </ion-col>
+        </ion-row>
+
+        <div class="divforbuttons">
+          <button ion-button clear logo-instagram (click)="openWebPage2('https://www.instagram.com/avecbrasil/')">
+            <ion-icon name="logo-instagram" class="ButtonIcon"></ion-icon>
+
+          </button>
+          <button ion-button clear logo-linkedin (click)="openWebPage2('https://www.linkedin.com/company/3271088/')">
+            <ion-icon name="logo-linkedin" class="ButtonIcon"></ion-icon>
+
+          </button>
+          <button ion-button clear logo-facebook (click)="openWebPage2('https://www.facebook.com/AvecBrasil/')">
+            <ion-icon name="logo-facebook" class="ButtonIcon"></ion-icon>
+
+          </button>
+
+        </div>
+
+      </ion-slide>
+
+    </ion-slides>
+  </div>
+
+
 </ion-content>
